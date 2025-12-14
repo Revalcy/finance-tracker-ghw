@@ -44,12 +44,12 @@ function App() {
         {currentView === "dashboard" && <Dashboard />}
         {currentView === "transactions" && <TransactionsTable />}
         {currentView === "add" && (
-          <TransactionForm
+          <TransactionForm 
             onSuccess={() => {
-              alert("Transaction added successfully!");
+              alert("Transaction added successfully!")
             }}
-          />
-        )}
+            />
+          )}
       </section>
     </main>
   );
